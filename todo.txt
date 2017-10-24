@@ -1,0 +1,2 @@
+-Entender e comentar as funções extrair e readBinaryFile
+-Relatório?
