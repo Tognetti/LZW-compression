@@ -38,15 +38,17 @@ def extrair(input, output):
     for i in xrange(tamDicionario):
         dicionario[i] = chr(i)
 
+    # O primeira caractere sempre estara no dicionario
     w = texto.pop(0)
     w = chr(w)
-
     uncompressed = [w]
 
     for k in texto:
         if k in dicionario:
             entry = dicionario[k]
         elif k == len(dicionario):
+            # alguns casos em que k nao esta no dicionario,
+            # é necessário recontruir a palavra e e adiciona-la ao dic
             entry = w + w[0]
 
         uncompressed.append(entry)
