@@ -23,7 +23,7 @@ def comprimir(input, output):
             dicionario[wc] = tamDicionario # adiciona a palavra nova ao dicionario
             tamDicionario += 1 # aumenta o tamanho do dicionario
             w = c
-    if w: # escreve no output o que sobrou
+    if w: # escreve no output o que sobrou ao fim
         compressed.append(dicionario[w])
 
     writeBinaryFile(output, compressed)
